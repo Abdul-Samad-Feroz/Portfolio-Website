@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --primary-grey: #424242;
+    --secondary-grey: #F5F6F8;
+    --primary-pink: #FF4967;
+    --secondary-pink: #FECED6;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* ---general styling--- */
+
+a{
+    
+}
