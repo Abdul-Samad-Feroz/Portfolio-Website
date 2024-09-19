@@ -1,51 +1,75 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rammetto One", sans-serif;
 }
 
-:root{
-    --white: #fff;
-    --black: #000;
-    --primary-grey: #424242;
-    --secondary-grey: #F5F6F8;
-    --primary-pink: #FF4967;
-    --secondary-pink: #FECED6;
+
+
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --primary-grey: #424242;
+  --secondary-grey: #f5f6f8;
+  --primary-pink: #ff4967;
+  --secondary-pink: #feced6;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-
 
 /* ---general styling--- */
 
-a{
-    text-decoration: none;
-    color: var(--black)
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-h1, h2, h4{
-    color: var(--black);
+h1,
+h2,
+h4 {
+  color: var(--black);
 }
 
-h1{
-    font-size: 2.6rem;
+h1 {
+  font-size: 2.6rem;
 }
 
-h2{
-    font-size: 1.5rem;
+h2 {
+  font-size: 1.5rem;
 }
 
-h3{
-    font-size: 1.3rem;
+h3 {
+  font-size: 1.3rem;
+  color: var(--primary-pink);
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p{
+    font-size: 1rem;
     color: var(--primary-grey);
+    margin: 1rem 0 2rem 0;
+    max-width: 80%;
 }
+ .para{
+    max-width: 100%;
+ }
 
-h4{
-    font-size: 1.2rem;
-}
+ .primary-btn{
+    
+ }
+
+
