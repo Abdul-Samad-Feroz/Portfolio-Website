@@ -1,2 +1,2 @@
-var input = prompt("Enter your name")
-console.log(input)
+// var input = prompt("Enter your name")
+// console.log(input)
