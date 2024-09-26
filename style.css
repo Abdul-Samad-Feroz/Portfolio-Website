@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.html{
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #333;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+  background-color: black !important;
+}
+
+.nav-link{
+  color: white !important;
+  position: relative !important;
+}
+
+.nav-link:hover {
+  text-decoration: none !important;
+}
+
+.nav-link::after {
+  content: '' !important;
+  display: block !important;
+  height: 2px !important;
+  background: white !important;
+  width: 0 !important;
+  transition: width 0.3s !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -5px !important; /* Adjusts the position of the underline */
+}
+
+.nav-link:hover::after {
+  width: 100% !important;
+}
+
+/* Hero Section Styles */
+#hero {
+  background: url('') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Section Styles */
+#about img {
+  border-radius: 50%;
+}
+
+/* Project Card Styles */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Skills Section Styles */
+.progress {
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  font-weight: bold;
+}
+
+/* GitHub Section Styles */
+.card {
+  border: none;
+}
+
+/* Contact Section Styles */
+#contact .form-label {
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+}
