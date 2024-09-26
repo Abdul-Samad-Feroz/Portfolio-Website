@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.custom-navbar {
+    background-color: #000; /* Black background */
+}
+
+.custom-navbar .nav-link {
+    color: white; /* White links */
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hero Section Styles */
+#hero {
+    background: url('') no-repeat center center/cover; /* Replace with your background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* About Section Styles */
+#about img {
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto;
+}
+
+/* Project Card Styles */
+.project-card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Skills Section Styles */
+.progress {
+    height: 20px; /* Height of the progress bars */
+}
+
+.progress-bar {
+    background-color: #007bff; /* Customize progress bar color */
+}
+
+/* GitHub Section Styles */
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale effect on card hover */
+}
+
+/* Contact Section Styles */
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000; /* Black background for footer */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #hero {
+        height: 60vh; /* Reduced height for smaller screens */
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 14px; /* Smaller font size for nav links */
+    }
+
+    #projects .project-card {
+        margin-bottom: 30px; /* Spacing between cards */
+    }
+}
