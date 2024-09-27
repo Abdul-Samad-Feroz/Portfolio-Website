@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 /* Navbar Styles */
 .custom-navbar {
     background-color: #000; /* Black background */
@@ -21,7 +25,7 @@ body {
 
 /* Hero Section Styles */
 #hero {
-    background: url('') no-repeat center center/cover; /* Replace with your background image */
+    background: url('./Images/Bg.jfif') no-repeat center center/cover; /* Replace with your background image */
     height: 100vh;
     display: flex;
     justify-content: center;
