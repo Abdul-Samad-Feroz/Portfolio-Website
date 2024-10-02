@@ -96,8 +96,6 @@ footer {
   }
 }
 
-
-
 /* Welcome screen styles */
 #welcome-screen {
   position: fixed;
@@ -105,7 +103,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right, #141E30, #243B55);
+  background: linear-gradient(to right, #141e30, #243b55);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +114,7 @@ footer {
 .welcome-content h1 {
   font-size: 3rem;
   color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -126,37 +124,49 @@ footer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url('your-background-image.gif') no-repeat center center/cover;
+  background: url("your-background-image.gif") no-repeat center center/cover;
   opacity: 0.3;
   z-index: -1;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
   .welcome-content h1 {
-      font-size: 2rem; /* Adjust font size for smaller screens */
-      padding: 0 20px; /* Add some padding so the text doesn't touch the edges */
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 0 20px; /* Add some padding so the text doesn't touch the edges */
   }
 
   #welcome-screen {
-      background: linear-gradient(to right, #0f1621, #192a40); /* Darker theme for mobile */
+    background: linear-gradient(
+      to right,
+      #0f1621,
+      #192a40
+    ); /* Darker theme for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .welcome-content h1 {
-      font-size: 1.5rem; /* Even smaller font size for very small screens */
-      padding: 0 15px;
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+    padding: 0 15px;
   }
 
   #welcome-screen {
-      height: 100vh;
-      background: linear-gradient(to right, #0f1621, #192a40); /* Darker, simpler gradient */
+    height: 100vh;
+    background: linear-gradient(
+      to right,
+      #0f1621,
+      #192a40
+    ); /* Darker, simpler gradient */
   }
 }
 
