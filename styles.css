@@ -129,6 +129,32 @@ footer {
   z-index: -1;
 }
 
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-size: 28px;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out; /* Smooth transition */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+}
+
+#back-to-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
