@@ -84,7 +84,7 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   #hero {
-    height: 100vh; /* Reduced height for smaller screens */
+    height: 95vh; /* Reduced height for smaller screens */
   }
 
   .custom-navbar .nav-link {
