@@ -28,7 +28,7 @@ html {
 
 /* Hero Section Styles */
 #hero {
-  background: url("./Images/bg2.jfif") no-repeat center center/cover; /* Replace with your background image */
+  background: url("./Images/bg3.jfif") no-repeat center center/cover; /* Replace with your background image */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -90,6 +90,7 @@ footer {
   .custom-navbar .nav-link {
     font-size: 14px; /* Smaller font size for nav links */
   }
+  
 
   #projects .project-card {
     margin-bottom: 30px; /* Spacing between cards */
