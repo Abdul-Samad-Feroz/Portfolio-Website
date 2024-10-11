@@ -84,7 +84,7 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   #hero {
-    height: 60vh; /* Reduced height for smaller screens */
+    height: 100vh; /* Reduced height for smaller screens */
   }
 
   .custom-navbar .nav-link {
@@ -170,6 +170,7 @@ footer {
     font-size: 2rem; /* Adjust font size for smaller screens */
     padding: 0 20px; /* Add some padding so the text doesn't touch the edges */
   }
+
 
   #welcome-screen {
     background: linear-gradient(
