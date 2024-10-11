@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 window.onscroll = function() {
   let backToTopButton = document.getElementById('back-to-top');
 
-  if (document.documentElement.scrollTop > 800) {
+  if (document.documentElement.scrollTop > 200) {
       backToTopButton.style.opacity = "1";  // Show button with opacity
       backToTopButton.style.visibility = "visible"; // Ensure visibility
   } else {

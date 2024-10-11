@@ -28,7 +28,7 @@ html {
 
 /* Hero Section Styles */
 #hero {
-  background: url("./Images/Bg3.jfif") no-repeat center center/cover; /* Replace with your background image */
+  background: url("./Images/bg2.jfif") no-repeat center center/cover; /* Replace with your background image */
   height: 100vh;
   display: flex;
   justify-content: center;
