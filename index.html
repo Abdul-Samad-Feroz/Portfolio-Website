@@ -69,18 +69,18 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center text-center text-white">
-      <div class="container">
-        <h1 class="display-4" style="color: black">Abdul Samad</h1>
-        <p class="lead" style="color: black">
-          Creative Web Developer | Designer
-        </p>
-        <a href="#projects" class="btn btn-outline-dark btn-lg">View My Work</a>
-      </div>
-    </section>
+   <!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4" style="color: black">Abdul Samad</h1>
+    <h5 class="lead" style="color: black">
+      Web <span id="changing-text"></span><span id="cursor">|</span> <!-- The rotating text with cursor -->
+    </h5>
+    <a href="#projects" class="btn btn-outline-dark btn-lg">View My Work</a>
+  </div>
+</section>
 
-    <hr />
+<hr />
 
     <!-- About Section -->
     <section id="about" class="py-5">
@@ -335,6 +335,48 @@
     </footer>
     <!-- Back to Top Button -->
     <a href="#" id="back-to-top" title="Go to top">&uarr;</a>
+    <script>
+      const words = ["Developer", "Designer"];
+      let index = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const changingText = document.getElementById("changing-text");
+      const cursor = document.getElementById("cursor");
+    
+      function type() {
+        const currentWord = words[index];
+        
+        if (isDeleting) {
+          changingText.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          changingText.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+    
+        // Manage typing speed and pause at the end of each word
+        let typingSpeed = isDeleting ? 100 : 150;
+    
+        if (!isDeleting && charIndex === currentWord.length) {
+          typingSpeed = 2500; // Wait for 2 seconds after a word is fully typed
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          index = (index + 1) % words.length; // Move to the next word
+          typingSpeed = 500; // Wait for 500ms before typing the next word
+        }
+    
+        setTimeout(type, typingSpeed);
+      }
+    
+      // Blinking cursor effect
+      setInterval(() => {
+        cursor.style.visibility = cursor.style.visibility === 'visible' ? 'hidden' : 'visible';
+      }, 500);
+    
+      // Start the typing effect
+      type();
+    </script>
     <script src="script.js"></script>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
