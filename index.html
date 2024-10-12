@@ -334,49 +334,7 @@
       </div>
     </footer>
     <!-- Back to Top Button -->
-    <a href="#" id="back-to-top" title="Go to top">&uarr;</a>
-    <script>
-      const words = ["Developer", "Designer"];
-      let index = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      const changingText = document.getElementById("changing-text");
-      const cursor = document.getElementById("cursor");
     
-      function type() {
-        const currentWord = words[index];
-        
-        if (isDeleting) {
-          changingText.textContent = currentWord.substring(0, charIndex - 1);
-          charIndex--;
-        } else {
-          changingText.textContent = currentWord.substring(0, charIndex + 1);
-          charIndex++;
-        }
-    
-        // Manage typing speed and pause at the end of each word
-        let typingSpeed = isDeleting ? 100 : 150;
-    
-        if (!isDeleting && charIndex === currentWord.length) {
-          typingSpeed = 2500; // Wait for 2 seconds after a word is fully typed
-          isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-          isDeleting = false;
-          index = (index + 1) % words.length; // Move to the next word
-          typingSpeed = 500; // Wait for 500ms before typing the next word
-        }
-    
-        setTimeout(type, typingSpeed);
-      }
-    
-      // Blinking cursor effect
-      setInterval(() => {
-        cursor.style.visibility = cursor.style.visibility === 'visible' ? 'hidden' : 'visible';
-      }, 500);
-    
-      // Start the typing effect
-      type();
-    </script>
     <script src="script.js"></script>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
