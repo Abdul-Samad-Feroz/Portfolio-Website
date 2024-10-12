@@ -36,6 +36,11 @@ html {
   text-align: center;
 }
 
+.hero-text {
+  font-size: 1.8rem; /* Adjust size as needed */
+  font-weight: lighter; /* Optional: make it bold */
+}
+
 /* About Section Styles */
 #about img {
   max-width: 100%; /* Ensure responsiveness */
