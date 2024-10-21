@@ -9,6 +9,44 @@ html {
   scroll-behavior: smooth !important;
 }
 
+p {
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+h1,
+h2 {
+  font-family: "Didot", serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button {
+  padding: 25px;
+  background-color: white;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus,
+a:hover {
+  color: #00e9e6;
+}
+
+button:hover,
+button:focus,
+button.active {
+  color: #00e9e6;
+}
+
+
+
 /* Navbar Styles */
 .custom-navbar {
   background-color: #000; /* Black background */
@@ -76,9 +114,50 @@ html {
   transform: scale(1.05); /* Scale effect on card hover */
 }
 
-/* Contact Section Styles */
-.form-control {
-  border-radius: 5px; /* Rounded corners for inputs */
+/*
+ * Contact
+ */
+ .contact-form {
+  margin: 80px 0px;
+}
+
+.contact-form form input {
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+  margin: 20px 0px;
+  background: transparent;
+  -webkit-transition: border-color 0.4s;
+  transition: border-color 0.4s;
+}
+
+.contact-form form input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.contact-form form input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact-form form input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.contact-form form input::placeholder {
+  color: transparent;
+}
+
+.contact-form form input:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.contact-form form input:focus {
+  padding-bottom: 6px;
+  font-weight: bold;
+  border-width: 3px;
+  border-image-slice: 1;
 }
 
 /* Footer Styles */
