@@ -45,8 +45,6 @@ button.active {
   color: #00e9e6;
 }
 
-
-
 /* Navbar Styles */
 .custom-navbar {
   background-color: #000; /* Black background */
@@ -117,7 +115,7 @@ button.active {
 /*
  * Contact
  */
- .contact-form {
+.contact-form {
   margin: 80px 0px;
 }
 
@@ -174,7 +172,6 @@ footer {
   .custom-navbar .nav-link {
     font-size: 14px; /* Smaller font size for nav links */
   }
-  
 
   #projects .project-card {
     margin-bottom: 30px; /* Spacing between cards */
@@ -255,7 +252,6 @@ footer {
     font-size: 2rem; /* Adjust font size for smaller screens */
     padding: 0 20px; /* Add some padding so the text doesn't touch the edges */
   }
-
 
   #welcome-screen {
     background: linear-gradient(
