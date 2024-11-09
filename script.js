@@ -3,10 +3,12 @@
 
 window.addEventListener("load", function () {
   setTimeout(function () {
+    // Hide the welcome screen and show the main portfolio
     document.getElementById("welcome-screen").style.display = "none";
     document.getElementById("main-portfolio").style.display = "block";
-  }, 3000); // 4500 milliseconds = 4.5 seconds
+  }, 3000); // 3000 milliseconds = 3 seconds (adjust as per requirement)
 });
+
 
 // Show the "Back to Top" button after scrolling 70px down
 window.onscroll = function() {

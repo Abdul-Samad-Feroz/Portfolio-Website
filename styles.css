@@ -191,6 +191,7 @@ footer {
   align-items: center;
   z-index: 9999;
   text-align: center;
+  flex-direction: column;
 }
 
 .welcome-content h1 {
@@ -198,6 +199,17 @@ footer {
   color: white;
   font-family: "Arial", sans-serif;
   animation: fadeIn 2s ease-in-out;
+  margin-top: 20px; /* Added space between spinner and text */
+}
+
+/* Loading Spinner Styles */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
 }
 
 /* Optional background animation */
@@ -210,6 +222,19 @@ footer {
   opacity: 0.3;
   z-index: -1;
 }
+
+/* Spinner rotation animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade-in effect for the main content */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 /* Back to Top Button */
 #back-to-top {
@@ -253,12 +278,20 @@ footer {
     padding: 0 20px; /* Add some padding so the text doesn't touch the edges */
   }
 
+  
+
   #welcome-screen {
     background: linear-gradient(
       to right,
       #0f1621,
       #192a40
     ); /* Darker theme for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .margin{
+    padding-bottom: 20px;
   }
 }
 
