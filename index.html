@@ -1,471 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdul Samad's Portfolio</title>
-    <link rel="shortcut icon" href="./Images/P.jpg" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Link to your CSS file -->
-  </head>
-  <body>
-    <!-- Welcome Page Section -->
-    <div id="welcome-screen">
-      <div class="loader"></div>
-      <div class="welcome-content">
-        <h1>Welcome to Abdul Samad's Portfolio</h1>
-      </div>
-    </div>
-    
-    <!-- Main Portfolio Content -->
-    <div id="main-portfolio" style="display: none;">
-      <!-- Your portfolio content here -->
-    </div>
-    
 
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar shadow-sm nav"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">AS.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Samad's Portfolio</title>
+  <link rel="shortcut icon" href="./Images/P.jpg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Link to your CSS file -->
+</head>
+
+<body>
+  <!-- Welcome Page Section -->
+  <div id="welcome-screen">
+    <div class="loader"></div>
+    <div class="welcome-content">
+      <h1>Welcome to Abdul Samad's Portfolio</h1>
+    </div>
+  </div>
+
+  <!-- Main Portfolio Content -->
+  <div id="main-portfolio" style="display: none">
+    <!-- Your portfolio content here -->
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="./Images/Logo.jfif">AS.</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AS.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link mx-lg-2 active text-light" aria-current="page" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link mx-lg-2 text-light" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link mx-lg-2 text-light" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link mx-lg-2 text-light" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://github.com/Abdul-Samad-Feroz"
-                target="_blank"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.linkedin.com/in/abdul-samad-feroz-41734a329"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.facebook.com/people/Abdul-Samad-Feroz/pfbid0oxpRNhSgEg3GYv9MjhF3nHpMhYRuw9uYWtTD6YgRzvBw2caffFkdYBNUAV5SYff7l/?mibextid=qi2Omg&rdid=G7lf0pvB28NvTdAW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FQpN4EMrJTP18YK9R%2F%3Fmibextid%3Dqi2Omg"
-                target="_blank"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
+              <a class="nav-link mx-lg-2 text-light" href="#contact">Contact</a>
             </li>
           </ul>
+
         </div>
       </div>
-    </nav>
+      <a href="#connect" class="connect-button">Let's Connect</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center text-center text-white">
-      <div class="container">
-        <h1 class="display-4" style="color: black">Abdul Samad</h1>
-        <h5 class="lead hero-text" style="color: black">
-          Frontend Web <span id="changing-text"></span
-          ><span id="cursor">|</span>
-          <!-- The rotating text with cursor -->
-        </h5>
-        <a href="#projects" class="btn btn-outline-dark btn-lg">View My Work</a>
-      </div>
-    </section>
 
-    <hr />
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2>About Me</h2>
-            <p class="lead">
-              Hello, I am a Computer Science student from Pakistan with a passion for
-              web development. I am skilled in HTML, CSS, Tailwind, and Bootstrap, and I
-              create responsive websites using Visual Studio Code. Currently, I
-              am expanding my knowledge by learning C++ and plan to dive into
-              JavaScript in the near future. I am constantly working to improve
-              my skill set in Web Devolopment. And i am availible for Freelancing work.
-            </p>
-          </div>
-          <div class="col-md-6 text-center">
-            <img
-              src="./Images/Logo2.webp"
-              alt="Your Photo"
-              class="img-fluid rounded-circle shadow-lg"
-              style="width: 300px"
-            />
-          </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 samad" style="color: white">Abdul Samad</h1>
+      <h5 class="lead hero-text" style="color: whitesmoke">
+        Frontend Web Developer
+      </h5>
+      <a href="#projects" class="btn btn-outline-light btn-lg">View My Work</a>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="text-black">About Me</h2>
+          <p class="lead text-black">
+            Hello, I am a student from Karachi, Pakistan. I've recently
+            completed my matriculation from The Educators and hold a passion
+            for Computer Science and Web Development in particular. I can
+            create responsive websites using HTML, CSS, Bootstrap, and
+            Tailwind CSS. Currently, I am expanding my knowledge by learning
+            JavaScript and C++. I am constantly working to improve my skill
+            set in Web Development.
+          </p>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <img src="./Images/Logo2.webp" alt="Your Photo" class="img-fluid rounded-circle shadow-lg"
+            style="width: 300px" />
         </div>
       </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-dark text-white py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">My Projects</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="project-card shadow-sm">
-              <img
-                src="./Images/ASF Resturant Snip.PNG"
-                class="img-fluid"
-                alt="Project 1"
-              />
-              <div class="project-info p-3">
-                <h5>Project 1</h5>
-                <p>A responsive website built for a Resturant.</p>
-                <a
-                  href="https://asf-resturant.netlify.app/"
-                  target="_blank"
-                  class="btn btn-light"
-                  >View Project</a
-                >
-              </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="bg-dark text-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project-card shadow-sm">
+            <img src="./Images/ASF Resturant Snip.PNG" class="img-fluid" alt="Project 1" />
+            <div class="project-info p-3">
+              <h5>Project 1</h5>
+              <p>A high-quality responsive website built for a Resturant.</p>
+              <a href="https://asf-resturant.netlify.app/" target="_blank" class="btn btn-light">View Project</a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="project-card shadow-sm">
-              <img
-                src="./Images/Portfolo Website for a Graphic designer.PNG"
-                class="img-fluid"
-                alt="Project 2"
-              />
-              <div class="project-info p-3">
-                <h5>Project 2</h5>
-                <p>A Portfolio Website created for a Graphic Designer.</p>
-                <a
-                  href="https://abubakar-khalids-portfolio.netlify.app/"
-                  target="_blank"
-                  class="btn btn-light"
-                  >View Project</a
-                >
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card shadow-sm">
+            <img src="./Images/Portfolo Website for a Graphic designer.PNG" class="img-fluid" alt="Project 2" />
+            <div class="project-info p-3">
+              <h5>Project 2</h5>
+              <p>A Portfolio Website created for a Graphic Designer.</p>
+              <a href="https://abubakar-khalids-portfolio.netlify.app/" target="_blank" class="btn btn-light">View
+                Project</a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="project-card shadow-sm">
-              <img
-                src="./Images/Portfolio.PNG"
-                class="img-fluid"
-                alt="Project 3"
-              />
-              <div class="project-info p-3">
-                <h5>Project 3</h5>
-                <p>A portfolio website for me showcasing creative talents.</p>
-                <a
-                  href="https://abdulsamads-portfolio.netlify.app/"
-                  target="_blank"
-                  class="btn btn-light"
-                  >View Project</a
-                >
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card shadow-sm">
+            <img src="./Images/Portfolio.PNG" class="img-fluid" alt="Project 3" />
+            <div class="project-info p-3">
+              <h5>Project 3</h5>
+              <p>A portfolio website for me showcasing creative talents.</p>
+              <a href="https://abdulsamads-portfolio.netlify.app/" target="_blank" class="btn btn-light">View
+                Project</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">My Skills</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h5>HTML</h5>
-            <div class="progress mb-4">
-              <div class="progress-bar" role="progressbar" style="width: 97%">
-                97%
-              </div>
-            </div>
-            <h5>CSS</h5>
-            <div class="progress mb-4">
-              <div class="progress-bar" role="progressbar" style="width: 40%">
-                40%
-              </div>
-            </div>
+    </div>
+  </section>
+  <br />
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">My Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>HTML</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="97%">97%</div>
           </div>
-          <div class="col-md-6">
-            <h5>Bootstrap</h5>
-            <div class="progress mb-4">
-              <div class="progress-bar" role="progressbar" style="width: 81%">
-                81%
-              </div>
-            </div>
-            <h5>Tailwind</h5>
-            <div class="progress mb-4">
-              <div class="progress-bar" role="progressbar" style="width: 60%">
-                60%
-              </div>
-            </div>
+          <h5>CSS</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="68%">68%</div>
+          </div>
+          <h5>JavaScript</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="18%">18%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Bootstrap</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="85%">85%</div>
+          </div>
+          <h5>Tailwind</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="65%">65%</div>
+          </div>
+          <h5>GitHub</h5>
+          <div class="progress mb-4">
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="50%">50%</div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- GitHub Section -->
-    <section id="github" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">My GitHub</h2>
-        <p class="text-center">Check out my latest work on GitHub!</p>
-        <div class="row">
-          <div class="col-md-4 margin">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Repository 1: ASF-Resturant</h5>
-                <p class="card-text">
-                  This is a responsive restaurant website designed to provide a
-                  user-friendly experience. The site features a modern layout,
-                  showcasing the restaurant's menu, ambiance, and contact
-                  information. Users can easily navigate through different
-                  sections, view the menu items, and find essential details
-                  about the restaurant. The website is built using HTML, CSS,
-                  and Bootstrap, ensuring a seamless experience across devices.
-                  Explore the code to see how I implemented various responsive
-                  design techniques and Bootstrap components.
-                </p>
-                <a
-                  href="https://github.com/Abdul-Samad-Feroz/ASF-Resturant"
-                  target="_blank"
-                  class="btn btn-dark"
-                  >View Repository</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 margin">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Repository 2: Demo-Portfolio-Website</h5>
-                <p class="card-text">
-                  This is a demo portfolio website designed to showcase web
-                  development skills. The site is designed to highlight
-                  proficiency in HTML, CSS, and Bootstrap, with a focus on
-                  creating responsive and visually appealing layouts. The
-                  website utilizes modern design principles and responsive
-                  techniques to ensure an optimal viewing experience on all
-                  devices. You can explore various projects and see how I
-                  implement modern design techniques. Feel free to explore the
-                  code and see how I implemented various components.
-                </p>
-                <a
-                  href="https://github.com/Abdul-Samad-Feroz/Demo-Portfolio-Website"
-                  target="_blank"
-                  class="btn btn-dark"
-                  >View Repository</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Repository 3: Abdul-Samad-Feroz</h5>
-                <p class="card-text">
-                  This repository contains the README file for my GitHub
-                  account, Abdul-Samad-Feroz. It provides an overview of my
-                  skills, projects, and interests in web development. The README
-                  serves as a guide for visitors to understand my journey as a
-                  web developer and showcases my commitment to learning and
-                  growth in this field. Explore the file to learn more about my
-                  work and how I can contribute to potential projects. In this
-                  file, you'll find information about the technologies I use, my
-                  approach to coding, and links to my significant projects.
-                </p>
-                <a
-                  href="https://github.com/Abdul-Samad-Feroz/Abdul-Samad-Feroz"
-                  target="_blank"
-                  class="btn btn-dark"
-                  >View Repository</a
-                >
-              </div>
-            </div>
+  <hr />
+  <!-- Social Media Accounts Section -->
+  <section id="connect" class="py-5 connectSection">
+    <div class="social-links">
+      <h2 class="text-center mb-5">Let's Connect</h2>
+      <section id="connect">
+        <a href="https://www.linkedin.com/in/abdul-samad-feroz-41734a329" target="_blank">
+          <i class="fab fa-linkedin" id="linkedin"></i>
+        </a>
+        <a href="https://github.com/Abdul-Samad-Feroz" target="_blank">
+          <i class="fab fa-github" id="git"></i>
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanaa1engineering@gmail.com" target="_blank">
+          <i class="fas fa-envelope" id="mail"></i>
+        </a>
+        <a href="https://www.facebook.com/abdulsamadferoz" target="_blank">
+          <i class="fab fa-facebook" id="facebook"></i>
+        </a>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <br />
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h1 class="heading">Contact us</h1>
+      </div>
+      <div class="row">
+        <h4 style="text-align:center">Give your feedback!</h4>
+      </div>
+      <div class="row input-container">
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <input type="text" required />
+            <label>Name</label>
           </div>
         </div>
-      </div>
-    </section>
-
-    <br />
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <h1>Contact</h1>
-            </div>
-            <div class="col">
-              <p>
-                Contact me via mail<br />
-                <a href="mailto:abdulsamadferoz786@gmail.com"
-                  >abdulsamadferoz786@gmail.com</a
-                >
-              </p>
-            </div>
-            <div class="col">
-              <p>
-                My phone <br />
-                <a href="tel:+92 3352141856">+92 3352141856</a>
-              </p>
-            </div>
-          </div>
-          <div class="contact-form col-12">
-            <form
-              action="mailto:abdulsamadferoz786@gmail.com"
-              method="post"
-              class="needs-validation"
-              novalidate
-            >
-              <div class="form-group mt-5">
-                <label class="col-12">Full name</label>
-                <input
-                  class="col-12"
-                  type="text"
-                  id="fname"
-                  placeholder="Full name"
-                  name="fname"
-                  required
-                  XXXautofocusXXX
-                />
-                <div class="invalid-feedback">Please write a full name.</div>
-              </div>
-              <div class="form-group mt-5">
-                <label class="col-12">E-mail</label>
-                <input
-                  class="col-12"
-                  type="email"
-                  id="email"
-                  placeholder="E-mail"
-                  name="email"
-                  required
-                  XXXautofocusXXX
-                />
-                <div class="invalid-feedback">
-                  Please write a correct e-mail.
-                </div>
-              </div>
-              <div class="form-group mt-5">
-                <label class="col-12">Message</label>
-                <input
-                  class="col-12"
-                  type="text"
-                  id="message"
-                  placeholder="Message"
-                  name="message"
-                  required
-                  XXXautofocusXXX
-                />
-                <div class="invalid-feedback">Please write a message.</div>
-              </div>
-              <div class="row justify-content-end">
-                <div class="col-12 col-lg-3 mb-5 text-end">
-                  <button type="submit" name="submit" class="main-button">
-                    Send message
-                    <img
-                      src="img/icons/arrow-right.svg"
-                      alt="arrow-right"
-                      style="width: 40px; margin-left: 12px"
-                    />
-                  </button>
-                </div>
-              </div>
-            </form>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input">
+            <input type="text" required />
+            <label>Email</label>
           </div>
         </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="styled-input" style="float:right;">
+            <input type="text" required />
+            <label>Phone Number</label>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="styled-input wide">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="btn-lrg submit-btn"> <a href="Images/Feed.webp">Send Message</a></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-      <div class="container">
-        <p>
-          Copyright © 2024 Abdul Samad Portfolio. All rights reserved | Design
-          by A.Samad
-        </p>
-      </div>
-    </footer>
-    <!-- Back to Top Button -->
-    <a href="#" id="back-to-top" title="Go to top">&uarr;</a>
-    <script>
-      const words = ["Developer", "Designer"];
-      let index = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-      const changingText = document.getElementById("changing-text");
-      const cursor = document.getElementById("cursor");
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>
+        Copyright © 2024-25 Abdul Samad's Portfolio. All rights reserved | Developed
+        by A.Samad
+      </p>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+  <a href="#" id="back-to-top" title="Go to top">&uarr;</a>
 
-      function type() {
-        const currentWord = words[index];
 
-        if (isDeleting) {
-          changingText.textContent = currentWord.substring(0, charIndex - 1);
-          charIndex--;
-        } else {
-          changingText.textContent = currentWord.substring(0, charIndex + 1);
-          charIndex++;
-        }
+  <script src="script.js"></script>
+  <script src="validation.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-        let typingSpeed = isDeleting ? 100 : 150;
-
-        if (!isDeleting && charIndex === currentWord.length) {
-          typingSpeed = 2000; // Wait for 2 seconds after a word is fully typed
-          isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-          isDeleting = false;
-          index = (index + 1) % words.length; // Move to the next word
-          typingSpeed = 500; // Wait for 500ms before typing the next word
-        }
-
-        setTimeout(type, typingSpeed);
-      }
-
-      setInterval(() => {
-        cursor.style.visibility =
-          cursor.style.visibility === "visible" ? "hidden" : "visible";
-      }, 500);
-
-      type();
-    </script>
-    <script src="script.js"></script>
-    <script src="validation.js"></script>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </html>
