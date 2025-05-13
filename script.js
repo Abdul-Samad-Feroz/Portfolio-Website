@@ -52,3 +52,6 @@ window.addEventListener("scroll", () => {
     animated = true;
   }
 });
+
+
+//Contact Section
