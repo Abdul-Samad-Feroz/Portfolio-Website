@@ -324,6 +324,7 @@ Skills Section Styles .progress {
   color: white;
   font-weight: 600;
   background-color: #009970;
+  border-radius: 6px;
   transition: all 0.3s ease;
   width: 80%;
   text-align: center;
@@ -339,6 +340,10 @@ Skills Section Styles .progress {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .send:hover {
@@ -978,7 +983,7 @@ footer {
   right: 30px;
   width: 60px;
   height: 60px;
-  background-color: #007bff;
+  background-color: #009970;
   color: white;
   text-align: center;
   line-height: 60px;
@@ -986,16 +991,14 @@ footer {
   border-radius: 50%;
   z-index: 1000;
   cursor: pointer;
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-  /* Smooth transition */
+  transition: all 0.3s;
   opacity: 0;
-  /* Initially hidden */
   visibility: hidden;
-  /* Initially hidden */
+
 }
 
 #back-to-top:hover {
-  background-color: #0056b3;
+  background-color: #00b383;
   transform: scale(1.2);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
 }
