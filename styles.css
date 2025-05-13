@@ -22,6 +22,7 @@ h2 {
 
 .samad {
   font-family: "Didot", serif !important;
+  font-weight: 500 !important;
 }
 
 h2 {
@@ -209,8 +210,17 @@ Skills Section Styles .progress {
   /* Scale effect on card hover */
 }
 
+.break-line{
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .break-line {
+    display: block;
+  }
+}
 /* Lets Connect */
-.connectSection {
+.connect-Section {
   min-height: 300px;
 }
 
