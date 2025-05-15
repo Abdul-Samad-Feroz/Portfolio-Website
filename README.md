@@ -1,4 +1,5 @@
-https://abdulsamads-portfolio.netlify.app/
+https://abdulsamads-portfolio.vercel.ap
 
-![image](https://github.com/user-attachments/assets/f107eabc-1bf3-4fcc-b71d-6f7f5cb480fd)
+![Portfolio](https://github.com/user-attachments/assets/8e681d92-d742-4a65-a79b-c3de85b579a7)
+
 
