@@ -66,6 +66,9 @@ button.active {
   transition: 0.3s color;
 }
 
+.navbar-brand:hover {
+  cursor: pointer;
+}
 .connect-button {
   background-color: #009970;
   color: #fff;
