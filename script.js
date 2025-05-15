@@ -53,5 +53,3 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-//Contact Section
