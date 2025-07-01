@@ -278,6 +278,8 @@ Skills Section Styles .progress {
   -o-transition: all 0.4s ease;
 }
 
+
+
 /* Contact */
 .new_home_web .text-blk.subHeading {
   text-align: center;
@@ -590,6 +592,10 @@ Skills Section Styles .progress {
   top: auto;
   bottom: 0px;
 }
+
+
+
+
 
 @media (max-width: 1024px) {
   .new_home_web
