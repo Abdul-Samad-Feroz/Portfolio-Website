@@ -213,7 +213,7 @@ Skills Section Styles .progress {
   /* Scale effect on card hover */
 }
 
-.break-line{
+.break-line {
   display: inline;
 }
 
@@ -277,8 +277,6 @@ Skills Section Styles .progress {
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
 }
-
-
 
 /* Contact */
 .new_home_web .text-blk.subHeading {
@@ -592,10 +590,6 @@ Skills Section Styles .progress {
   top: auto;
   bottom: 0px;
 }
-
-
-
-
 
 @media (max-width: 1024px) {
   .new_home_web
@@ -1008,7 +1002,6 @@ footer {
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
-
 }
 
 #back-to-top:hover {
