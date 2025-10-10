@@ -1,5 +1,5 @@
 https://abdulsamads-portfolio.vercel.app
 
-![Portfolio](https://github.com/user-attachments/assets/8e681d92-d742-4a65-a79b-c3de85b579a7)
+![Portfolio](img width="1898" height="873" alt="Portfolio Website" src="https://github.com/user-attachments/assets/f6a32470-5288-4d5a-b464-f1e3f71a8aa8")
 
 
