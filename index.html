@@ -4,30 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="I'm Abdul Samad Feroz, a Web Developer based in Karachi, Pakistan. I build responsive websites using HTML, CSS, JavaScript, Bootstrap. View my portfolio and projects.">
-  <meta name="keywords"
-    content="Abdul Samad, Web Developer, Frontend Developer, Portfolio, Karachi, HTML, CSS, Bootstrap, JavaScript">
-  <meta name="author" content="Abdul Samad Feroz">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Abdul Samad Feroz | Web Developer">
-  <meta property="og:description"
-    content="Responsive web developer from Karachi. View my projects, skills, and contact info.">
-  <meta property "og:type" content="website">
-  <meta property="og:url" content="https://abdulsamads-portfolio.vercel.app">
-  <meta property="og:image"
-    content="https://drive.google.com/file/d/1-tEXfblmxg3GQDDYbKeWjH9XgTksxZRR/view?usp=sharing">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Abdul Samad Feroz | Web Developer">
-  <meta name="twitter:description"
-    content="Responsive web developer from Karachi. Check out my portfolio and projects.">
-  <meta name="twitter:image"
-    content="https://drive.google.com/file/d/1-tEXfblmxg3GQDDYbKeWjH9XgTksxZRR/view?usp=sharing">
-
   <title>Abdul Samad's Portfolio</title>
   <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -35,32 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abdul Samad Feroz",
-    "url": "https://abdulsamads-portfolio.vercel.app",
-    "image": "https://drive.google.com/file/d/1-tEXfblmxg3GQDDYbKeWjH9XgTksxZRR/view?usp=sharing",
-    "sameAs": [
-      "https://www.linkedin.com/in/abdul-samad-feroz-41734a329",
-      "https://github.com/Abdul-Samad-Feroz"
-    ],
-    "jobTitle": "Web Developer",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Karachi",
-      "addressCountry": "Pakistan"
-    }
-  }
-  </script>
-
   <link rel="stylesheet" href="styles.css" />
   <!-- Link to your CSS file -->
 </head>
 
 <body>
-  <!-- Welcome Page Section -->
+  Welcome Page Section
   <div id="welcome-screen">
     <div class="loader"></div>
     <div class="welcome-content">
@@ -70,6 +26,8 @@
 
   <!-- Main Portfolio Content -->
   <div id="main-portfolio" style="display: none">
+      <video autoplay muted loop id="bg-video">
+    <source src="./Images/vecteezy_simple-and-elegant-dark-minimal-abstract-background-cloud_44179232.mp4" type="video/mp4">
     <!-- Your portfolio content here -->
   </div>
 
@@ -79,7 +37,7 @@
       <a class="navbar-brand me-auto">AS.</a>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AS.</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> AS.</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -158,33 +116,31 @@
       <div class="row">
         <div class="col-md-4">
           <div class="project-card shadow-sm">
-            <img src="./Images/ASF Resturant Snip.PNG" class="img-fluid" alt="Project 1" />
+            <img src="./Images/Signature Detailng.png" class="img-fluid" alt="Signature Detailing" />
             <div class="project-info p-3">
-              <h5>Project 1</h5>
-              <p>A high-quality responsive website built for a Resturant.</p>
-              <a href="https://asf-resturant.netlify.app/" target="_blank" class="btn btn-light">View Project</a>
+              <h5>Car Detailing Website</h5>
+              <p>The Signature Detailing - Modern & Responsive Business Website</p>
+              <a href="https://the-signature-detailing.vercel.app" target="_blank" class="btn btn-light">Live Demo </a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-card shadow-sm">
-            <img src="./Images/Portfolo Website for a Graphic designer.PNG" class="img-fluid" alt="Project 2" />
+            <img src="./Images/Abubakar Designs.PNG" class="img-fluid" alt="Abubakar Designs" />
             <div class="project-info p-3">
-              <h5>Project 2</h5>
-              <p>A Portfolio Website created for a Graphic Designer.</p>
-              <a href="https://abubakar-khalids-portfolio.netlify.app/" target="_blank" class="btn btn-light">View
-                Project</a>
+              <h5>Portfolio Website</h5>
+              <p>Abu Bakar Designs - Modern & Responsive Portfolio Website for a Graphic designer</p>
+              <a href="https://abubakar-designs.vercel.app" target="_blank" class="btn btn-light">Live Demo</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="project-card shadow-sm">
-            <img src="./Images/Portfolio.PNG" class="img-fluid" alt="Project 3" />
+            <img src="./Images/Game Dev portfolio.PNG" class="img-fluid" alt="Game Dev Portfolio" />
             <div class="project-info p-3">
-              <h5>Project 3</h5>
-              <p>A portfolio website for me showcasing creative talents.</p>
-              <a href="https://abdulsamads-portfolio.netlify.app/" target="_blank" class="btn btn-light">View
-                Project</a>
+              <h5>Portfolio Website</h5>
+              <p>Game Dev Portfolio - Modern & Stylish Portfolio Website for a Game Developer</p>
+              <a href="https://game-dev-portfolio-chi.vercel.app" target="_blank" class="btn btn-light">Live Demo</a>
             </div>
           </div>
         </div>
@@ -206,9 +162,9 @@
           <div class="progress mb-4">
             <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="68%">68%</div>
           </div>
-          <h5>JavaScript</h5>
+          <h5>Github</h5>
           <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="18%">18%</div>
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="70%">70%</div>
           </div>
         </div>
         <div class="col-md-6">
@@ -218,11 +174,11 @@
           </div>
           <h5>Tailwind</h5>
           <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="65%">65%</div>
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="45%">45%</div>
           </div>
-          <h5>C++</h5>
+          <h5>JavaScript</h5>
           <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="30%">30%</div>
+            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="10%">10%</div>
           </div>
         </div>
       </div>
@@ -235,16 +191,16 @@
     <div class="social-links">
       <h2 class="text-center mb-5">Let's Connect</h2>
       <section id="connect">
-        <a href="https://www.linkedin.com/in/abdul-samad-feroz-41734a329" target="_blank">
+        <a href="https://www.linkedin.com/in/abdul-samad-feroz-41734a329" target="_blank" title="LinkedIn">
           <i class="fab fa-linkedin" id="linkedin"></i>
         </a>
-        <a href="https://github.com/Abdul-Samad-Feroz" target="_blank">
+        <a href="https://github.com/Abdul-Samad-Feroz" target="_blank" title="GitHub">
           <i class="fab fa-github" id="git"></i>
         </a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanaa1engineering@gmail.com" target="_blank">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanaa1engineering@gmail.com" target="_blank"  title="Email">
           <i class="fas fa-envelope" id="mail"></i>
         </a>
-        <a href="https://www.facebook.com/abdulsamadferoz" target="_blank">
+        <a href="https://www.facebook.com/abdulsamadferoz" target="_blank" title="Facebook">
           <i class="fab fa-facebook" id="facebook"></i>
         </a>
 
@@ -305,7 +261,7 @@
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
       <p>
-        Copyright © 2024-25 Abdul Samad's Portfolio. All rights reserved | Developed
+        Copyright © 2025 Abdul Samad's Portfolio. All rights reserved | Developed
         by A.Samad
       </p>
     </div>

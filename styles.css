@@ -1,4 +1,5 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   font-family: "Roboto", sans-serif;
   margin: 0 !important;
@@ -158,14 +159,19 @@ button.active {
 }
 /* Hero Section Styles */
 #hero {
-  font-family: Arial, sans-serif;
-  background: url("./Images/bg2.jfif") no-repeat center center/cover;
-  /* Replace with your background image */
+  position: relative;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ویڈیو کو پوری screen پر fit کرے گا */
+  z-index: -1; /* ویڈیو کو پیچھے رکھے گا */
 }
 
 .hero-text {
@@ -191,6 +197,7 @@ button.active {
 
 .project-card:hover {
   transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.11);
   /* Scale effect on hover */
 }
 
