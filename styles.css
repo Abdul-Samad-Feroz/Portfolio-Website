@@ -7,6 +7,7 @@ body {
 }
 html {
   scroll-behavior: smooth !important;
+  
 }
 p {
   line-height: 35px;
@@ -30,6 +31,9 @@ h1 {
 button {
   padding: 25px; /* background-color: white; */
   border: none;
+}
+section {
+  scroll-margin-top: 80px; /* navbar کی height کے برابر */
 }
 .asf:hover {
   transition: all 0.3s !important;
@@ -720,7 +724,7 @@ footer {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   [data-aos] {
     transform: none !important;
   }

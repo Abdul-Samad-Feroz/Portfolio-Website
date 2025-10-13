@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abdulsamads-portfolio.vercel.app/sitemap.xml
