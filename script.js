@@ -1,14 +1,3 @@
-//var input = prompt("Enter your name")
-//console.log(input)
-
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    // Hide the welcome screen and show the main portfolio
-    document.getElementById("welcome-screen").style.display = "none";
-    document.getElementById("main-portfolio").style.display = "block";
-  }, 2000); // 3000 milliseconds = 3 seconds (adjust as per requirement)
-});
-
 // Show the "Back to Top" button after scrolling 70px down
 window.onscroll = function () {
   let backToTopButton = document.getElementById("back-to-top");
@@ -52,4 +41,3 @@ window.addEventListener("scroll", () => {
     animated = true;
   }
 });
-
