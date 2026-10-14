@@ -56,10 +56,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Link to your CSS file -->
   <!-- Vercel Speed Insights -->
-  <script type="module">
-    import { injectSpeedInsights } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1/dist/index.mjs';
-    injectSpeedInsights();
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
   </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 
 <body>
