@@ -5,72 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdul Samad's Portfolio</title>
-  <meta name="description" content="Official portfolio of Abdul Samad Feroz, a Front-End Web Developer skilled in HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript.">
-  <meta name="keywords" content="Abdul Samad Feroz, Web Developer, Front-End Developer, Portfolio, HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, Karachi, Pakistan">
-  <meta name="author" content="Abdul Samad Feroz">
-  <link rel="canonical" href="https://abdulsamads-portfolio.netlify.app/">
-  <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://abdulsamads-portfolio.vercel.app/">
-<meta property="og:title" content="Abdul Samad Feroz | Front-End Web Developer Portfolio">
-<meta property="og:description" content="Welcome to the official portfolio of Abdul Samad Feroz — a Front-End Web Developer skilled in HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript.">
-<meta property="og:image" content="https://abdulsamads-portfolio.netlify.app/images/og-image.jpg">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://abdulsamads-portfolio.vercel.app/">
-<meta name="twitter:title" content="Abdul Samad Feroz | Front-End Web Developer Portfolio">
-<meta name="twitter:description" content="I'm Abdul Samad Feroz, a Front-End Web Developer from Karachi, Pakistan. View my portfolio projects and web development work.">
-<meta name="twitter:image" content="https://abdulsamads-portfolio.netlify.app/images/og-image.jpg">
-<!-- Schema Markup (JSON-LD for Google) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Abdul Samad Feroz",
-  "url": "https://abdulsamads-portfolio.netlify.app/",
-  "image": "https://abdulsamads-portfolio.netlify.app/images/profile.jpg",
-  "jobTitle": "Front-End Web Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Freelancer"
-  },
-  "sameAs": [
-    "https://github.com/Abdul-Samad-Feroz",
-    "https://www.linkedin.com/in/abdul-samad-feroz"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Karachi",
-    "addressCountry": "Pakistan"
-  },
-  "description": "Abdul Samad Feroz is a Front-End Web Developer skilled in HTML, CSS, Bootstrap, Tailwind CSS, and JavaScript, building responsive and modern websites."
-}
-</script>
-  <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Link to your CSS file -->
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+
 </head>
 
 <body>
 
-  <!-- Main Portfolio Content -->
-  <div id="main-portfolio">
-    <video autoplay muted loop id="bg-video">
-      <source src="./Images/vecteezy_simple-and-elegant-dark-minimal-abstract-background-cloud_44179232.mp4"
-        type="video/mp4">
-      <!-- Your portfolio content here -->
-  </div>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
-      <a href="https://abdulsamads-portfolio.vercel.app" class="navbar-brand me-auto asf" data-aos="fade-right" data-aos-delay="200" >AS.</a>
+      <a href="https://abdulsamads-portfolio.vercel.app" class="navbar-brand me-auto asf" data-aos="fade-right"
+        data-aos-delay="200">AS.</a>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> AS.</h5>
@@ -97,7 +47,6 @@
 
         </div>
       </div>
-      <a href="#connect" class="connect-button" data-aos="fade-left" data-aos-delay="200">Let's Connect</a>
       <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -107,245 +56,17 @@
 
 
 
-
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center text-center text-white ">
-    <div class="container">
-      <h1 class="display-4 samad" style="color: white" data-aos="zoom-in" data-aos-duration="1200">Abdul Samad</h1>
-      <h5 class="lead hero-text" style="color: whitesmoke" data-aos="fade-up" data-aos-delay="200">
-        Frontend <span class="break-line">Web Developer</span>
-      </h5>
-      <a href="#projects" class="btn btn-outline-light btn-lg" data-aos="fade-up" data-aos-delay="400">View My Work</a>
-    </div>
-  </section>
-
-  <hr />
-  <!-- About Section -->
-  <section id="about" class="py-5" data-aos="fade-up" data-aos-duration="900">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-          <h2>About Me</h2>
-          <p class="lead">
-            Hello, I am a student from Karachi, Pakistan. I've recently
-            completed my matriculation from The Educators and hold a passion
-            for Computer Science and Web Development in particular. I can
-            create responsive websites using HTML, CSS, Bootstrap, and
-            Tailwind CSS. Currently, I am expanding my knowledge by learning
-            JavaScript. I am constantly working to improve my skill
-            set in Web Development.
-          </p>
-        </div>
-
-        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="200">
-          <img src="./Images/Logo2.webp" alt="Your Photo" class="img-fluid rounded-circle shadow-lg"
-            style="width: 300px" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="bg-dark text-white py-5" data-aos="fade-up" data-aos-duration="900">
-    <div class="container">
-      <h2 class="text-center mb-5" data-aos="flip-left" data-aos-delay="100">My Projects</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
-          <div class="project-card shadow-sm">
-            <img src="./Images/Signature Detailng.png" class="img-fluid" alt="Signature Detailing" />
-            <div class="project-info p-3">
-              <h5>Car Detailing Website</h5>
-              <p>The Signature Detailing - Modern & Responsive Business Website</p>
-              <a href="https://the-signature-detailing.vercel.app" target="_blank" class="btn btn-light">Live Demo </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <div class="project-card shadow-sm">
-            <img src="./Images/Abubakar Designs.PNG" class="img-fluid" alt="Abubakar Designs" />
-            <div class="project-info p-3">
-              <h5>Portfolio Website</h5>
-              <p>Abu Bakar Designs - Modern & Responsive Portfolio Website for a Graphic designer</p>
-              <a href="https://abubakar-designs.vercel.app" target="_blank" class="btn btn-light">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
-          <div class="project-card shadow-sm">
-            <img src="./Images/Game Dev portfolio.PNG" class="img-fluid" alt="Game Dev Portfolio" />
-            <div class="project-info p-3">
-              <h5>Portfolio Website</h5>
-              <p>Game Dev Portfolio - Modern & Stylish Portfolio Website for a Game Developer</p>
-              <a href="https://game-dev-portfolio-chi.vercel.app" target="_blank" class="btn btn-light">Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <br />
-
-  <!-- Skills Section -->
-  <section id="skills" class="py-5" data-aos="fade-up" data-aos-duration="900">
-    <div class="container">
-      <h2 class="text-center mb-5" data-aos="fade-right" data-aos-delay="100">My Skills</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h5>HTML</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="97">97%</div>
-          </div>
-          <h5>CSS</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="68">68%</div>
-          </div>
-          <h5>Github</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="70">70%</div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <h5>Bootstrap</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="85">85%</div>
-          </div>
-          <h5>Tailwind</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="45">45%</div>
-          </div>
-          <h5>JavaScript</h5>
-          <div class="progress mb-4">
-            <div class="progress-bar" role="progressbar" style="width: 0%" data-percentage="10">10%</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- Social Media Accounts Section -->
-  <section id="connect" class="py-5 connectSection" data-aos="fade-up" data-aos-duration="900">
-    <div class="social-links text-center" data-aos="zoom-in" data-aos-delay="150">
-      <h2 class="text-center mb-5">Let's Connect</h2>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="https://www.linkedin.com/in/abdul-samad-feroz-41734a329" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin" id="linkedin"></i>
-        </a>
-        <a href="https://github.com/Abdul-Samad-Feroz" target="_blank" title="GitHub">
-          <i class="fab fa-github" id="git"></i>
-        </a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanaa1engineering@gmail.com" target="_blank"
-          title="Email">
-          <i class="fas fa-envelope" id="mail"></i>
-        </a>
-        <a href="https://www.facebook.com/abdulsamadferoz" target="_blank" title="Facebook">
-          <i class="fab fa-facebook" id="facebook"></i>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <hr />
-
-  <!-- Contact Section -->
-  <div id="contact" class="new_home_web" data-aos="fade-up" data-aos-duration="900">
-    <div class="responsive-container-block big-container">
-      <img class="imgBG" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw65.png">
-      <div class="responsive-container-block textContainer">
-        <div class="topHead" data-aos="fade-right" data-aos-delay="100">
-          <p class="text-blk heading">
-            Get in
-            <span class="orangeText">
-              touch
-            </span>
-          </p>
-          <div class="orangeLine" id="w-c-s-bgc_p-2-dm-id"></div>
-        </div>
-      </div>
-      <div class="responsive-container-block container">
-        <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b"
-          data-aos="fade-left" data-aos-delay="200">
-          <form class="form-box" action="https://formspree.io/f/manppdeb" method="POST">
-            <div class="container-block form-wrapper">
-              <div class="responsive-container-block">
-                <div class="left4">
-                  <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-2">
-                    <input class="input" id="ijowk-2" name="FirstName" placeholder="First Name" type="text" required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <input class="input" id="indfi-2" name="Last Name" placeholder="Last Name" type="text" required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <input class="input" id="ipmgh-2" name="Email" placeholder="Email Address" type="email" required>
-                  </div>
-                  <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 lastPhone">
-                    <input class="input" id="imgis-2" name="PhoneNumber" placeholder="Phone Number" type="number"
-                      required>
-                  </div>
-                </div>
-                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-2"
-                  data-aos="fade-up" data-aos-delay="300">
-                  <textarea class="textinput" id="i5vyy-2" placeholder="Message" required></textarea>
-                </div>
-              </div>
-              <button type="submit" class="send" title="Send Message"> <a id="w-c-s-bgc_p-1-dm-id">
-                  Send
-                </a></button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p>
-        Copyright © 2025 Abdul Samad's Portfolio. All rights reserved | Developed
-        by A.Samad
-      </p>
-    </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <a href="#" id="back-to-top" title="Go to top" data-aos="fade-up" data-aos-delay="200">&uarr;</a>
-
-
-
-  <script src="script.js"></script>
-  <script src="validation.js"></script>
   <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <script>
-    AOS.init({
-      duration: 900,
-      easing: 'ease-out-cubic',
-      once: true // اگر آپ چاہیں تو false کریں تاکہ ہر scroll پر دوبارہ ہو
-    });
-    // progress bars: جب AOS element visible ہو تو width animate کریں
-    document.addEventListener('aos:in', ({ detail }) => {
-      // اگر element خود progress-bar ہو تو set width
-      if (detail.classList && detail.classList.contains('progress-bar')) {
-        const val = detail.getAttribute('data-percentage') || '0';
-        detail.style.width = parseInt(val, 10) + '%';
-      }
-
-      // یا اگر parent میں progress-bar موجود ہو (مثال: column میں) تو سب animate کرو
-      const bars = detail.querySelectorAll ? detail.querySelectorAll('.progress-bar') : [];
-      bars.forEach(bar => {
-        const v = bar.getAttribute('data-percentage') || '0';
-        bar.style.width = parseInt(v, 10) + '%';
-      });
-    });
+    // AOS.init({
+    //   duration: 900,
+    //   easing: 'ease-out-cubic',
+    //   once: true
+    // });
   </script>
+  <script src="script.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
