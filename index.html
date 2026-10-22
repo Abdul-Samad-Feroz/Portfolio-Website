@@ -64,8 +64,6 @@
     <!-- ==================== HERO SECTION ==================== -->
     <section id="hero" class="hero">
       <div class="hero__container">
-
-        <!-- Left: Text Content & Actions -->
         <div class="hero__content">
           <div class="hero__intro-pill">
             <span class="hero__intro-dot" aria-hidden="true"></span>
@@ -95,22 +93,15 @@
             </a>
           </div>
         </div>
-
-        <!-- Right: Glassmorphic Browser Mockup & Floating Badges -->
         <div class="hero__visual" aria-hidden="true">
-          <!-- Layered Depth Plates behind the card -->
           <span class="hero__plate hero__plate--back"></span>
           <span class="hero__plate hero__plate--mid"></span>
 
-          <!-- Main Glass Window Card -->
           <div class="hero__card">
-            <!-- Corner Glow Lines -->
             <span class="hero__corner-glow hero__corner-glow--tl-h"></span>
             <span class="hero__corner-glow hero__corner-glow--tl-v"></span>
             <span class="hero__corner-glow hero__corner-glow--br-h"></span>
             <span class="hero__corner-glow hero__corner-glow--br-v"></span>
-
-            <!-- Window Header (Traffic Dots + Search Bar) -->
             <div class="hero__card-header">
               <span class="hero__dot"></span>
               <span class="hero__dot"></span>
@@ -118,7 +109,6 @@
               <span class="hero__search-bar"></span>
             </div>
 
-            <!-- Window Body (Wireframe UI Layout) -->
             <div class="hero__card-body">
               <div class="hero__card-nav">
                 <span class="hero__nav-logo"></span>
@@ -145,7 +135,6 @@
             </div>
           </div>
 
-          <!-- Floating Status Badges -->
           <div class="hero__badge hero__badge--top">
             <span class="hero__badge-dot hero__badge-dot--blue"></span>
             <span>HTML · CSS · JavaScript</span>
@@ -160,9 +149,10 @@
       </div>
     </section>
     <!-- ==================== END HERO SECTION ==================== -->
+
     <!-- ==================== ABOUT SECTION ==================== -->
     <section id="about" class="section about">
-      <div class="about__container">
+      <div class="container">
 
         <div class="section-header">
           <h2 class="section-title">About</h2>
@@ -173,40 +163,109 @@
           </p>
         </div>
 
-        <div class="about__grid">
-
-          <article class="about__card">
+        <div class="card-grid">
+          <article class="card">
             <span class="about__num">01</span>
-            <h3 class="about__card-title">Foundation</h3>
-            <p class="about__card-text">
+            <h3 class="card__title">Foundation</h3>
+            <p class="card__text">
               Frontend projects in HTML, CSS, and JavaScript, from a client website to interactive tools.
             </p>
           </article>
 
-          <article class="about__card">
+          <article class="card">
             <span class="about__num">02</span>
-            <h3 class="about__card-title">Approach</h3>
-            <p class="about__card-text">
-              Build it, solve the problem, then refine the result.
-            </p>
+            <h3 class="card__title">Approach</h3>
+            <p class="card__text">Build it, solve the problem, then refine the result.</p>
           </article>
 
-          <article class="about__card">
+          <article class="card">
             <span class="about__num">03</span>
-            <h3 class="about__card-title">Direction</h3>
-            <p class="about__card-text">
-              Software development, Python, and AI.
-            </p>
+            <h3 class="card__title">Direction</h3>
+            <p class="card__text">Software development, Python, and AI.</p>
           </article>
-
         </div>
 
       </div>
     </section>
     <!-- ==================== END ABOUT SECTION ==================== -->
-    <section id="skills">
-      <h2>Skills</h2>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills">
+      <div class="container">
+
+        <div class="section-header">
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-lead">What I work with today, grouped by what I use it for.</p>
+        </div>
+
+        <div class="card-grid skills__grid">
+
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+              </svg>
+            </span>
+            <h3 class="card__title">Frontend Development</h3>
+            <ul class="chip-list" role="list">
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Bootstrap</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m5 7 5 5-5 5M12 17h7" />
+              </svg>
+            </span>
+            <h3 class="card__title">Programming</h3>
+            <ul class="chip-list" role="list">
+              <li class="chip">C</li>
+              <li class="chip">Python · currently learning</li>
+              <li class="chip">C++</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6" cy="5" r="2" />
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="18" cy="9" r="2" />
+                <path d="M6 7v10M18 11c0 4-4 5-10 7" />
+              </svg>
+            </span>
+            <h3 class="card__title">Tools &amp; Workflow</h3>
+            <ul class="chip-list" role="list">
+              <li class="chip">Git</li>
+              <li class="chip">GitHub</li>
+              <li class="chip">VS Code</li>
+              <li class="chip">Google Colab</li>
+              <li class="chip">Prettier</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9.6 4.2 4.2 0 0 1 17 18Z" />
+              </svg>
+            </span>
+            <h3 class="card__title">Platforms &amp; Libraries</h3>
+            <ul class="chip-list" role="list">
+              <li class="chip">Vercel</li>
+              <li class="chip">Netlify</li>
+              <li class="chip">Font Awesome</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </section>
+    <!-- ==================== END SKILLS SECTION ==================== -->
     <section id="projects">
       <h2>Projects</h2>
     </section>

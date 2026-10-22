@@ -14,6 +14,9 @@
   --nav-border: rgba(141, 180, 255, 0.16);
   --nav-blur: 10px;
   --container: 1120px;
+  --border: rgba(141, 180, 255, 0.16);
+  --muted: #9ba6bb;
+  --surface: rgba(10, 19, 34, 0.75);
 }
 
 *,
@@ -926,7 +929,7 @@ main:focus {
   background-color: var(--bg);
 }
 
-.about__container {
+.container {
   width: 100%;
   max-width: var(--container);
   margin-inline: auto;
@@ -963,28 +966,28 @@ main:focus {
 
 /* About Cards  */
 
-.about__grid {
+/* ---------- Shared Cards (About, Skills, Education) ---------- */
+.card-grid {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
-.about__card {
+.card {
   position: relative;
   isolation: isolate;
-  background: rgba(10, 19, 34, 0.75);
-  border: 1px solid rgba(141, 180, 255, 0.16);
-  border-radius: 16px;
   padding: 28px 24px;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
   transition:
     transform 0.22s ease-out,
     border-color 0.22s ease-out,
     box-shadow 0.22s ease-out;
 }
 
-.about__card::before {
+/* Corner glow: position and tint vary per card through custom properties */
+.card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -992,38 +995,87 @@ main:focus {
   pointer-events: none;
   border-radius: inherit;
   background: radial-gradient(
-    240px circle at 0% 0%,
-    rgba(76, 141, 255, 0.12),
+    240px circle at var(--glow-x, 0%) var(--glow-y, 0%),
+    var(--glow-color, rgba(76, 141, 255, 0.12)),
     transparent 70%
   );
   opacity: 0.55;
   transition: opacity 0.22s ease-out;
 }
 
-.about__card:nth-child(2)::before {
-  background: radial-gradient(
-    240px circle at 100% 0%,
-    rgba(42, 100, 242, 0.16),
-    transparent 70%
-  );
+.card-grid > .card:nth-child(4n + 2) {
+  --glow-x: 100%;
+  --glow-y: 0%;
 }
 
-.about__card:nth-child(3)::before {
-  background: radial-gradient(
-    240px circle at 100% 100%,
-    rgba(76, 141, 255, 0.12),
-    transparent 70%
-  );
+.card-grid > .card:nth-child(4n + 3) {
+  --glow-x: 100%;
+  --glow-y: 100%;
 }
 
-.about__card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(76, 141, 255, 0.35);
-  box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.6);
+.card-grid > .card:nth-child(4n + 4) {
+  --glow-x: 0%;
+  --glow-y: 100%;
 }
 
-.about__card:hover::before {
-  opacity: 1;
+.card-grid > .card:nth-child(even) {
+  --glow-color: rgba(42, 100, 242, 0.16);
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(76, 141, 255, 0.35);
+    box-shadow: 0 14px 30px -12px rgba(0, 0, 0, 0.6);
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}
+
+.card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(76, 141, 255, 0.08);
+  color: var(--blue-300);
+}
+
+.card__icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.card__text {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .about__num {
@@ -1036,21 +1088,6 @@ main:focus {
   margin: 0 0 12px;
 }
 
-.about__card-title {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--text);
-  margin: 0 0 8px;
-}
-
-.about__card-text {
-  color: #9ba6bb;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
 /* Responsive Adaptations */
 @media (max-width: 819px) {
   .section {
@@ -1059,5 +1096,51 @@ main:focus {
 
   .section-lead {
     margin-bottom: 32px;
+  }
+}
+
+/* ---------- Skills ---------- */
+.skills__grid {
+  grid-template-columns: 1fr;
+}
+
+/* Glow points to each card's outer corner in the 2x2 layout */
+.skills__grid > .card:nth-child(3) {
+  --glow-x: 0%;
+  --glow-y: 100%;
+}
+
+.skills__grid > .card:nth-child(4) {
+  --glow-x: 100%;
+  --glow-y: 100%;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--blue-300);
+  font-size: 13px;
+  transition: border-color 0.2s ease-out;
+}
+
+@media (hover: hover) {
+  .chip:hover {
+    border-color: rgba(76, 141, 255, 0.5);
+  }
+}
+
+@media (min-width: 640px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
