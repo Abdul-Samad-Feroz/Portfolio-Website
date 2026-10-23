@@ -70,3 +70,46 @@
     sections.forEach((s) => observer.observe(s));
   }
 })();
+
+(() => {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const submit = form.querySelector('button[type="submit"]');
+  const status = form.querySelector(".form__status");
+
+  function setStatus(message, state = "") {
+    status.textContent = message;
+    status.dataset.state = state;
+  }
+
+  // Native validation runs first; this only fires for a valid form.
+  // Without JavaScript, the form still posts normally to its action URL.
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    setStatus("Sending…");
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+
+      form.reset();
+      setStatus(
+        "Thanks, your message was sent. I’ll get back to you soon.",
+        "success",
+      );
+    } catch {
+      setStatus(
+        "Something went wrong. Please email me directly instead.",
+        "error",
+      );
+    } finally {
+      submit.disabled = false;
+    }
+  });
+})();
