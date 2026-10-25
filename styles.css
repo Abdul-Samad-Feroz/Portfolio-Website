@@ -1380,6 +1380,15 @@ main:focus {
   word-break: break-word;
 }
 
+.contact__line svg.contact__icon--filled {
+  fill: var(--blue-300);
+  stroke: none;
+}
+
+.contact__line--strong:has(+ .contact__line--strong) {
+  margin-bottom: 10px;
+}
+
 .contact .link {
   margin-top: 24px;
 }
@@ -1603,4 +1612,203 @@ main:focus {
   .link:hover .ar-d {
     transform: none;
   }
+}
+
+/* Animations */
+
+/* ---------- Keyframes ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes chipPop {
+  from {
+    opacity: 0;
+    transform: scale(0.65) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes navbarDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes badgeBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------- Navbar entrance ---------- */
+.navbar {
+  animation: navbarDrop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ---------- Hero: staggered entrance + continuous float ---------- */
+.hero__intro-pill {
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+
+.hero__title {
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+
+.hero__desc {
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both;
+}
+
+.hero__actions {
+  opacity: 0;
+  animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+
+/* Visual card: scale-in entrance then infinite gentle float */
+.hero__visual {
+  opacity: 0;
+  animation:
+    scaleUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both,
+    heroFloat 6s ease-in-out 1.6s infinite;
+}
+
+/* Badges: fade in then bob independently */
+.hero__badge--top {
+  animation:
+    fadeIn 0.6s ease 1.2s both,
+    badgeBob 4s ease-in-out 1.8s infinite;
+}
+
+.hero__badge--bottom {
+  animation:
+    fadeIn 0.6s ease 1.4s both,
+    badgeBob 4.5s ease-in-out 2.3s infinite;
+}
+
+[data-anim] {
+  opacity: 0;
+}
+
+/* Reveal animations — triggered when JS adds .is-visible */
+[data-anim].is-visible {
+  animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--stagger, 0s) both;
+}
+
+[data-anim="slideRight"].is-visible {
+  animation: slideRight 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--stagger, 0s)
+    both;
+}
+
+[data-anim="scaleUp"].is-visible {
+  animation: scaleUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) var(--stagger, 0s)
+    both;
+}
+
+[data-anim="fade"].is-visible {
+  animation: fadeIn 0.6s ease var(--stagger, 0s) both;
+}
+
+/* ---------- Chips ---------- */
+.chip[data-anim-chip] {
+  opacity: 0;
+}
+
+.chip[data-anim-chip].is-visible {
+  animation: chipPop 0.42s cubic-bezier(0.34, 1.56, 0.64, 1)
+    var(--chip-delay, 0s) both;
+}
+
+/* ---------- Accessibility: respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .navbar,
+  .hero__intro-pill,
+  .hero__title,
+  .hero__desc,
+  .hero__actions,
+  .hero__visual,
+  .hero__badge--top,
+  .hero__badge--bottom {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-anim],
+  .chip[data-anim-chip] {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
+
+/* Smooth scrolling (Lenis) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+html.lenis {
+  scroll-behavior: auto;
 }
